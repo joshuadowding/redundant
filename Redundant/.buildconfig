@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/jdowding/.cache/gnome-builder/install/Redundant/host
+app-id=
+postbuild=
+prebuild=
+default=true
