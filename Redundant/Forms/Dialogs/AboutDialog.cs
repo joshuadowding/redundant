@@ -3,8 +3,8 @@ using System.Reflection;
 using System.Windows.Forms;
 
 namespace Redundant.Forms.Dialogs {
-    partial class About : Form {
-        public About() {
+    partial class AboutDialog : Form {
+        public AboutDialog() {
             InitializeComponent();
             this.Text = String.Format("About {0}", AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;

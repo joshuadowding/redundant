@@ -20,8 +20,6 @@ namespace Redundant {
         public static void Main(string[] args) {
             Local = new SessionModel();
 
-            Console.WriteLine("Redundant " + Application.ProductVersion);
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Instance());

@@ -120,16 +120,16 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="logoPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHeSURBVHhe7c8hDlxRDATBvf+lE1KsUTLE+npFWxrZv+d5
-        nud5nuf5b38+yns7e5/jvZ29z/Hezt7neG9n73O8t7P3Od7b2Qv5POeGvLMX8nnODXlnL+TznBvyzl7I
-        5zk35J29kM9zbsg7eyGf59yQd/ZCnpkLeWYu5J29kGfmQp6ZC3lnL+SZuZBn5kLe2Qt5Zi7kmbmQd/ZC
-        npkLeWYu5J29kGfmQp6ZC3lnL+TznBvyzl7I5zk35J29kM9zbsg7eyGf59yQd/ZCPs+5Ie/shXyec0Pe
-        2Qs55JBDDjnkkEMOeWcv5JBDDjnkkEMOOeSdvZBDDjnkkEMOOeSQd/ZCDjnkkEMOOeSQQ97ZCznkkEMO
-        OeSQQw55Zy/kkEMOOeSQQw455J29kM9zbsg7eyGf59yQd/ZCPs+5Ie/shXyec0Pe2Qv5POeGvLMX8nnO
-        DXlnL+SZuZBn5kLe2Qt5Zi7kmbmQd/ZCnpkLeWYu5J29kGfmQp6ZC3lnL+SZuZBn5kLe2Qt5Zi7kmbmQ
-        d/ZCPs+5Ie/shXyec0Pe2Qv5POeGvLMX8nnODXlnL+TznBvyzl7I5zk35J29z/Hezt7neG9n73O8t7P3
-        Od7b2fsc7+3sfY73nud5nud5nudf/X5/ARzfvF0GsK5CAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAd5JREFUeF7tzyEOXFEMBMG9/6UTUqxRMsT6ekVbGtm/53me53me5/lvfz7Kezt7
+        n+O9nb3P8d7O3ud4b2fvc7y3s/c53tvZC/k854a8sxfyec4NeWcv5POcG/LOXsjnOTfknb2Qz3NuyDt7
+        IZ/n3JB39kKemQt5Zi7knb2QZ+ZCnpkLeWcv5Jm5kGfmQt7ZC3lmLuSZuZB39kKemQt5Zi7knb2QZ+ZC
+        npkLeWcv5POcG/LOXsjnOTfknb2Qz3NuyDt7IZ/n3JB39kI+z7kh7+yFfJ5zQ97ZCznkkEMOOeSQQw55
+        Zy/kkEMOOeSQQw455J29kEMOOeSQQw455JB39kIOOeSQQw455JBD3tkLOeSQQw455JBDDnlnL+SQQw45
+        5JBDDjnknb2Qz3NuyDt7IZ/n3JB39kI+z7kh7+yFfJ5zQ97ZC/k854a8sxfyec4NeWcv5Jm5kGfmQt7Z
+        C3lmLuSZuZB39kKemQt5Zi7knb2QZ+ZCnpkLeWcv5Jm5kGfmQt7ZC3lmLuSZuZB39kI+z7kh7+yFfJ5z
+        Q97ZC/k854a8sxfyec4NeWcv5POcG/LOXsjnOTfknb3P8d7O3ud4b2fvc7y3s/c53tvZ+xzv7ex9jvee
+        53me53me51/9fn8BHN+8XQawrkIAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

@@ -50,7 +50,7 @@ namespace Redundant.Forms {
         }
 
         public void About(object sender, EventArgs args) {
-            About about = new About();
+            AboutDialog about = new AboutDialog();
             about.ShowDialog(this);
         }
 

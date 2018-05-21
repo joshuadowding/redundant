@@ -16,6 +16,7 @@ namespace Redundant.Models {
         private bool defaultExpiry;
         private DateTime jobCreated;
         private DateTime jobUpdated;
+        private DateTime jobFinalized;
         private DateTime jobExpired;
 
         public JobModel() {
@@ -92,6 +93,11 @@ namespace Redundant.Models {
             set { jobUpdated = value; }
         }
 
+        public DateTime Finalized {
+            get { return jobFinalized; }
+            set { jobFinalized = value; }
+        }
+
         public DateTime Expiry {
             get { return jobExpired; }
             set { jobExpired = value; }
@@ -104,5 +110,19 @@ namespace Redundant.Models {
         Active = 2,
         Hold = 3,
         Rejected = 4
+    }
+
+    public enum JobTerm {
+        Full = 0,      //Hours Required, Length Required.
+        Part = 1,      //Hours Required, Length Required.
+        Zero = 4,      //No Hours or Length Required.
+        Freelance = 5, //No Hours or Length Required.
+        Agency = 6     //No Hours or Length Required.
+    }
+
+    public enum JobLength {
+        Fixed = 0,
+        Temporary = 1,
+        Permenent = 2
     }
 }
