@@ -62,6 +62,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.locationInput = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lengthInput = new System.Windows.Forms.ComboBox();
+            this.typeInput = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -183,20 +187,19 @@
             this.tableLayoutPanel4.ColumnCount = 3;
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel4.Controls.Add(this.linkInput, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.label14, 0, 0);
             this.tableLayoutPanel4.Controls.Add(this.notesInput, 1, 1);
             this.tableLayoutPanel4.Controls.Add(this.label16, 0, 1);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(12, 187);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(12, 217);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(680, 297);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(680, 267);
             this.tableLayoutPanel4.TabIndex = 10;
             // 
             // linkInput
@@ -228,7 +231,7 @@
             this.notesInput.Multiline = true;
             this.notesInput.Name = "notesInput";
             this.notesInput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.notesInput.Size = new System.Drawing.Size(579, 262);
+            this.notesInput.Size = new System.Drawing.Size(579, 232);
             this.notesInput.TabIndex = 8;
             // 
             // label16
@@ -245,13 +248,14 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 7;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.18809F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.04075F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.09636F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.19272F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.09636F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.19272F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.20779F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.08531F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11782F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.23564F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11782F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.23564F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel3.Controls.Add(this.label17, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.label13, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label10, 0, 0);
@@ -263,20 +267,24 @@
             this.tableLayoutPanel3.Controls.Add(this.statusInput, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.expiryInput, 3, 1);
             this.tableLayoutPanel3.Controls.Add(this.defaultExpiryInput, 5, 1);
+            this.tableLayoutPanel3.Controls.Add(this.label15, 2, 2);
+            this.tableLayoutPanel3.Controls.Add(this.lengthInput, 3, 2);
+            this.tableLayoutPanel3.Controls.Add(this.typeInput, 1, 2);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 129);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowCount = 3;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(680, 58);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(680, 88);
             this.tableLayoutPanel3.TabIndex = 9;
             // 
             // label13
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(215, 36);
+            this.label13.Location = new System.Drawing.Point(213, 36);
             this.label13.Margin = new System.Windows.Forms.Padding(3);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(38, 15);
@@ -312,7 +320,7 @@
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(428, 7);
+            this.label11.Location = new System.Drawing.Point(423, 7);
             this.label11.Margin = new System.Windows.Forms.Padding(3);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(33, 15);
@@ -323,16 +331,16 @@
             // callsInput
             // 
             this.callsInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.callsInput.Location = new System.Drawing.Point(68, 3);
+            this.callsInput.Location = new System.Drawing.Point(67, 3);
             this.callsInput.Name = "callsInput";
-            this.callsInput.Size = new System.Drawing.Size(141, 23);
+            this.callsInput.Size = new System.Drawing.Size(140, 23);
             this.callsInput.TabIndex = 15;
             // 
             // label12
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(215, 7);
+            this.label12.Location = new System.Drawing.Point(213, 7);
             this.label12.Margin = new System.Windows.Forms.Padding(3);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(56, 15);
@@ -343,41 +351,41 @@
             // meetingsInput
             // 
             this.meetingsInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.meetingsInput.Location = new System.Drawing.Point(286, 3);
+            this.meetingsInput.Location = new System.Drawing.Point(283, 3);
             this.meetingsInput.Name = "meetingsInput";
-            this.meetingsInput.Size = new System.Drawing.Size(136, 23);
+            this.meetingsInput.Size = new System.Drawing.Size(134, 23);
             this.meetingsInput.TabIndex = 4;
             // 
             // testsInput
             // 
             this.testsInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.testsInput.Location = new System.Drawing.Point(499, 3);
+            this.testsInput.Location = new System.Drawing.Point(493, 3);
             this.testsInput.Name = "testsInput";
-            this.testsInput.Size = new System.Drawing.Size(136, 23);
+            this.testsInput.Size = new System.Drawing.Size(134, 23);
             this.testsInput.TabIndex = 18;
             // 
             // statusInput
             // 
             this.statusInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.statusInput.FormattingEnabled = true;
-            this.statusInput.Location = new System.Drawing.Point(68, 32);
+            this.statusInput.Location = new System.Drawing.Point(67, 32);
             this.statusInput.Name = "statusInput";
-            this.statusInput.Size = new System.Drawing.Size(141, 23);
+            this.statusInput.Size = new System.Drawing.Size(140, 23);
             this.statusInput.TabIndex = 20;
             // 
             // expiryInput
             // 
             this.expiryInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.expiryInput.Location = new System.Drawing.Point(286, 32);
+            this.expiryInput.Location = new System.Drawing.Point(283, 32);
             this.expiryInput.Name = "expiryInput";
-            this.expiryInput.Size = new System.Drawing.Size(136, 23);
+            this.expiryInput.Size = new System.Drawing.Size(134, 23);
             this.expiryInput.TabIndex = 22;
             // 
             // defaultExpiryInput
             // 
             this.defaultExpiryInput.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.defaultExpiryInput.AutoSize = true;
-            this.defaultExpiryInput.Location = new System.Drawing.Point(499, 34);
+            this.defaultExpiryInput.Location = new System.Drawing.Point(493, 34);
             this.defaultExpiryInput.Name = "defaultExpiryInput";
             this.defaultExpiryInput.Size = new System.Drawing.Size(98, 19);
             this.defaultExpiryInput.TabIndex = 23;
@@ -390,7 +398,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 29F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.tableLayoutPanel2.Controls.Add(this.label7, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.positionInput, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label3, 0, 0);
@@ -533,6 +541,48 @@
             this.label9.Text = "*";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label15
+            // 
+            this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(213, 65);
+            this.label15.Margin = new System.Windows.Forms.Padding(3);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(44, 15);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "Length";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label17
+            // 
+            this.label17.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(3, 65);
+            this.label17.Margin = new System.Windows.Forms.Padding(3);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(32, 15);
+            this.label17.TabIndex = 25;
+            this.label17.Text = "Type";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lengthInput
+            // 
+            this.lengthInput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lengthInput.FormattingEnabled = true;
+            this.lengthInput.Location = new System.Drawing.Point(283, 61);
+            this.lengthInput.Name = "lengthInput";
+            this.lengthInput.Size = new System.Drawing.Size(134, 23);
+            this.lengthInput.TabIndex = 26;
+            // 
+            // typeInput
+            // 
+            this.typeInput.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.typeInput.FormattingEnabled = true;
+            this.typeInput.Location = new System.Drawing.Point(67, 61);
+            this.typeInput.Name = "typeInput";
+            this.typeInput.Size = new System.Drawing.Size(140, 23);
+            this.typeInput.TabIndex = 27;
+            // 
             // EditView
             // 
             this.AcceptButton = this.confirmButton;
@@ -612,5 +662,9 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.DateTimePicker expiryInput;
         private System.Windows.Forms.CheckBox defaultExpiryInput;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox lengthInput;
+        private System.Windows.Forms.ComboBox typeInput;
     }
 }

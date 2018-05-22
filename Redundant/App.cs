@@ -8,9 +8,6 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace Redundant {
-    /// <summary>
-    /// ...
-    /// </summary>
     public static class App {
         public const string FILE_EXTENSION = ".json";
 
@@ -25,11 +22,6 @@ namespace Redundant {
             Application.Run(new Instance());
         }
 
-        /// <summary>
-        /// ...
-        /// </summary>
-        /// <param name="fileName"></param>
-        /// <returns></returns>
         public static bool Save(string fileName) {
             try {
                 JsonSerializer serializer = new JsonSerializer {
@@ -50,11 +42,6 @@ namespace Redundant {
             }
         }
 
-        /// <summary>
-        /// ...
-        /// </summary>
-        /// <param name="fileName"></param>
-        /// <returns></returns>
         public static bool Load(string fileName) {
             try {
                 using(StreamReader stream = File.OpenText(fileName)) {
@@ -70,10 +57,6 @@ namespace Redundant {
             }
         }
 
-        /// <summary>
-        /// ...
-        /// </summary>
-        /// <returns></returns>
         public static int GenerateID() {
             Random random = new Random(Environment.TickCount);
             int[] numbers = new int[3];
@@ -85,53 +68,15 @@ namespace Redundant {
         }
     }
 
-    /// <summary>
-    /// ...
-    /// </summary>
     public class Instance : ApplicationContext {
         public Forms.BrowseView browse;
 
         public Instance() {
-            Application.ApplicationExit += OnApplicationClosed;
-
-            //TODO: Startup.
-
-            /*
-            welcome = new Forms.Welcome();
-            welcome.FormClosing += OnFormClosing;
-            welcome.FormClosed += OnFormClosed;
-            welcome.Show();
-            */
-
             browse = new Forms.BrowseView();
-            browse.FormClosing += OnFormClosing;
             browse.FormClosed += OnFormClosed;
             browse.Show();
         }
-
-        /// <summary>
-        /// ...
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="args"></param>
-        public void OnApplicationClosed(object sender, EventArgs args) {
-            
-        }
         
-        /// <summary>
-        /// ...
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="args"></param>
-        public void OnFormClosing(object sender, EventArgs args) {
-            
-        }
-
-        /// <summary>
-        /// ...
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="args"></param>
         public void OnFormClosed(object sender, EventArgs args) {
             ExitThread();
         }

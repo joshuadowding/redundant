@@ -12,6 +12,8 @@ namespace Redundant.Models {
         private int jobCalls;
         private int jobInterviews;
         private int jobTests;
+        private JobTerm jobTerm;
+        private JobLength jobLength;
         private int jobID;
         private bool defaultExpiry;
         private DateTime jobCreated;
@@ -71,6 +73,16 @@ namespace Redundant.Models {
         public int Tests {
             get { return jobTests; }
             set { jobTests = value; }
+        }
+
+        public JobTerm Term {
+            get { return jobTerm; }
+            set { jobTerm = value; }
+        }
+
+        public JobLength Length {
+            get { return jobLength; }
+            set { jobLength = value; }
         }
 
         public int ID {

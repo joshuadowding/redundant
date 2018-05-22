@@ -23,11 +23,6 @@ namespace Redundant.Forms {
             selectedModel = model;
         }
 
-        /// <summary>
-        /// ...
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="args"></param>
         public void Awake(object sender, EventArgs args) {
             this.ActiveControl = this.positionInput;
 
@@ -35,6 +30,19 @@ namespace Redundant.Forms {
             this.statusInput.Items.Add(JobStatus.Hold);
             this.statusInput.Items.Add(JobStatus.Rejected);
             this.statusInput.SelectedItem = this.statusInput.Items[0];
+
+            this.typeInput.Items.Add(JobTerm.Full);
+            this.typeInput.Items.Add(JobTerm.Part);
+            this.typeInput.Items.Add(JobTerm.Zero);
+            this.typeInput.Items.Add(JobTerm.Freelance);
+            this.typeInput.Items.Add(JobTerm.Agency);
+            this.typeInput.SelectedItem = this.typeInput.Items[0];
+
+            this.lengthInput.Items.Add(JobLength.Permenent);
+            this.lengthInput.Items.Add(JobLength.Fixed);
+            this.lengthInput.Items.Add(JobLength.Temporary);
+            this.lengthInput.SelectedItem = this.lengthInput.Items[0];
+
             this.idLabel.Text = App.GenerateID().ToString();
 
             //Populate fields with selected model data if present:
@@ -47,6 +55,8 @@ namespace Redundant.Forms {
                 this.meetingsInput.Value = selectedModel.Interviews;
                 this.testsInput.Value = selectedModel.Tests;
                 this.statusInput.SelectedItem = selectedModel.Status;
+                this.typeInput.SelectedItem = selectedModel.Term;
+                this.lengthInput.SelectedItem = selectedModel.Length;
                 this.expiryInput.Value = selectedModel.Expiry;
                 this.linkInput.Text = selectedModel.Link;
                 this.notesInput.Text = selectedModel.Notes;
@@ -55,11 +65,6 @@ namespace Redundant.Forms {
             }
         }
 
-        /// <summary>
-        /// ...
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="args"></param>
         public void Confirm(object sender, EventArgs args) {
             if (String.IsNullOrWhiteSpace(this.positionInput.Text) ||
                 String.IsNullOrWhiteSpace(this.companyInput.Text) ||
@@ -78,6 +83,8 @@ namespace Redundant.Forms {
             selectedModel.Calls = (int)this.callsInput.Value;
             selectedModel.Interviews = (int)this.meetingsInput.Value;
             selectedModel.Tests = (int)this.testsInput.Value;
+            selectedModel.Term = (JobTerm)Enum.Parse(typeof(JobTerm), this.typeInput.Text);
+            selectedModel.Length = (JobLength)Enum.Parse(typeof(JobLength), this.lengthInput.Text);
             selectedModel.Link = this.linkInput.Text;
             selectedModel.Notes = this.notesInput.Text;
             selectedModel.Updated = DateTime.Now;
@@ -100,21 +107,11 @@ namespace Redundant.Forms {
             this.Close();
         }
 
-        /// <summary>
-        /// ...
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="args"></param>
         public void Cancel(object sender, EventArgs args) {
             DialogResult result = MessageBox.Show(CANCEL_WARNING, CANCEL_HEADING, MessageBoxButtons.YesNo);
             if(result == DialogResult.Yes) this.Close();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="args"></param>
         public void DefaultExpiryChecked(object sender, EventArgs args) {
             if(this.defaultExpiryInput.Checked) {
                 DateTime advanceTime = DateTime.Now.AddDays(21);
