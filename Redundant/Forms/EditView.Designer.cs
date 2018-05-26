@@ -248,8 +248,8 @@
             // tableLayoutPanel3
             // 
             this.tableLayoutPanel3.ColumnCount = 7;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.20779F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.08531F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.31746F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 23.01587F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11782F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.23564F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11782F));
@@ -331,9 +331,9 @@
             // callsInput
             // 
             this.callsInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.callsInput.Location = new System.Drawing.Point(67, 3);
+            this.callsInput.Location = new System.Drawing.Point(68, 3);
             this.callsInput.Name = "callsInput";
-            this.callsInput.Size = new System.Drawing.Size(140, 23);
+            this.callsInput.Size = new System.Drawing.Size(139, 23);
             this.callsInput.TabIndex = 15;
             // 
             // label12
@@ -368,9 +368,9 @@
             // 
             this.statusInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.statusInput.FormattingEnabled = true;
-            this.statusInput.Location = new System.Drawing.Point(67, 32);
+            this.statusInput.Location = new System.Drawing.Point(68, 32);
             this.statusInput.Name = "statusInput";
-            this.statusInput.Size = new System.Drawing.Size(140, 23);
+            this.statusInput.Size = new System.Drawing.Size(139, 23);
             this.statusInput.TabIndex = 20;
             // 
             // expiryInput
@@ -578,9 +578,9 @@
             // 
             this.typeInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.typeInput.FormattingEnabled = true;
-            this.typeInput.Location = new System.Drawing.Point(67, 61);
+            this.typeInput.Location = new System.Drawing.Point(68, 61);
             this.typeInput.Name = "typeInput";
-            this.typeInput.Size = new System.Drawing.Size(140, 23);
+            this.typeInput.Size = new System.Drawing.Size(139, 23);
             this.typeInput.TabIndex = 27;
             // 
             // EditView
