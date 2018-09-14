@@ -33,13 +33,17 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.fileClose = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewEdit = new System.Windows.Forms.ToolStripMenuItem();
             this.viewView = new System.Windows.Forms.ToolStripMenuItem();
             this.viewSort = new System.Windows.Forms.ToolStripMenuItem();
             this.sortStatus = new System.Windows.Forms.ToolStripMenuItem();
             this.statusAscending = new System.Windows.Forms.ToolStripMenuItem();
             this.statusDescending = new System.Windows.Forms.ToolStripMenuItem();
             this.filterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filterStatus = new System.Windows.Forms.ToolStripMenuItem();
+            this.filterAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.filterActive = new System.Windows.Forms.ToolStripMenuItem();
+            this.filterHold = new System.Windows.Forms.ToolStripMenuItem();
+            this.filterRejected = new System.Windows.Forms.ToolStripMenuItem();
             this.viewJobs = new System.Windows.Forms.ToolStripMenuItem();
             this.jobsAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.jobsEdit = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,11 +65,6 @@
             this.viewSeparator = new System.Windows.Forms.PictureBox();
             this.openDialog = new System.Windows.Forms.OpenFileDialog();
             this.saveDialog = new System.Windows.Forms.SaveFileDialog();
-            this.filterStatus = new System.Windows.Forms.ToolStripMenuItem();
-            this.filterAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.filterActive = new System.Windows.Forms.ToolStripMenuItem();
-            this.filterHold = new System.Windows.Forms.ToolStripMenuItem();
-            this.filterRejected = new System.Windows.Forms.ToolStripMenuItem();
             this.viewMenu.SuspendLayout();
             this.viewPanel.SuspendLayout();
             this.listMenu.SuspendLayout();
@@ -77,7 +76,6 @@
             this.viewMenu.BackColor = System.Drawing.SystemColors.Control;
             this.viewMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.viewFile,
-            this.viewEdit,
             this.viewView,
             this.filterToolStripMenuItem,
             this.viewJobs});
@@ -139,12 +137,6 @@
             this.fileClose.Text = "Close";
             this.fileClose.Click += new System.EventHandler(this.Exit);
             // 
-            // viewEdit
-            // 
-            this.viewEdit.Name = "viewEdit";
-            this.viewEdit.Size = new System.Drawing.Size(39, 20);
-            this.viewEdit.Text = "Edit";
-            // 
             // viewView
             // 
             this.viewView.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -167,7 +159,7 @@
             this.statusAscending,
             this.statusDescending});
             this.sortStatus.Name = "sortStatus";
-            this.sortStatus.Size = new System.Drawing.Size(180, 22);
+            this.sortStatus.Size = new System.Drawing.Size(106, 22);
             this.sortStatus.Text = "Status";
             // 
             // statusAscending
@@ -189,6 +181,45 @@
             this.filterToolStripMenuItem.Name = "filterToolStripMenuItem";
             this.filterToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.filterToolStripMenuItem.Text = "Filter";
+            // 
+            // filterStatus
+            // 
+            this.filterStatus.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.filterAll,
+            this.filterActive,
+            this.filterHold,
+            this.filterRejected});
+            this.filterStatus.Name = "filterStatus";
+            this.filterStatus.Size = new System.Drawing.Size(106, 22);
+            this.filterStatus.Text = "Status";
+            // 
+            // filterAll
+            // 
+            this.filterAll.Name = "filterAll";
+            this.filterAll.Size = new System.Drawing.Size(119, 22);
+            this.filterAll.Text = "All";
+            this.filterAll.Click += new System.EventHandler(this.FilterToggle_OnClick);
+            // 
+            // filterActive
+            // 
+            this.filterActive.Name = "filterActive";
+            this.filterActive.Size = new System.Drawing.Size(119, 22);
+            this.filterActive.Text = "Active";
+            this.filterActive.Click += new System.EventHandler(this.FilterToggle_OnClick);
+            // 
+            // filterHold
+            // 
+            this.filterHold.Name = "filterHold";
+            this.filterHold.Size = new System.Drawing.Size(119, 22);
+            this.filterHold.Text = "Hold";
+            this.filterHold.Click += new System.EventHandler(this.FilterToggle_OnClick);
+            // 
+            // filterRejected
+            // 
+            this.filterRejected.Name = "filterRejected";
+            this.filterRejected.Size = new System.Drawing.Size(119, 22);
+            this.filterRejected.Text = "Rejected";
+            this.filterRejected.Click += new System.EventHandler(this.FilterToggle_OnClick);
             // 
             // viewJobs
             // 
@@ -352,46 +383,7 @@
             this.saveDialog.FileName = "Test";
             this.saveDialog.Title = "Save";
             // 
-            // filterStatus
-            // 
-            this.filterStatus.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.filterAll,
-            this.filterActive,
-            this.filterHold,
-            this.filterRejected});
-            this.filterStatus.Name = "filterStatus";
-            this.filterStatus.Size = new System.Drawing.Size(180, 22);
-            this.filterStatus.Text = "Status";
-            // 
-            // filterAll
-            // 
-            this.filterAll.Name = "filterAll";
-            this.filterAll.Size = new System.Drawing.Size(119, 22);
-            this.filterAll.Text = "All";
-            this.filterAll.Click += new System.EventHandler(this.FilterToggle_OnClick);
-            // 
-            // filterActive
-            // 
-            this.filterActive.Name = "filterActive";
-            this.filterActive.Size = new System.Drawing.Size(119, 22);
-            this.filterActive.Text = "Active";
-            this.filterActive.Click += new System.EventHandler(this.FilterToggle_OnClick);
-            // 
-            // filterHold
-            // 
-            this.filterHold.Name = "filterHold";
-            this.filterHold.Size = new System.Drawing.Size(119, 22);
-            this.filterHold.Text = "Hold";
-            this.filterHold.Click += new System.EventHandler(this.FilterToggle_OnClick);
-            // 
-            // filterRejected
-            // 
-            this.filterRejected.Name = "filterRejected";
-            this.filterRejected.Size = new System.Drawing.Size(119, 22);
-            this.filterRejected.Text = "Rejected";
-            this.filterRejected.Click += new System.EventHandler(this.FilterToggle_OnClick);
-            // 
-            // Browse
+            // BrowseView
             // 
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -404,7 +396,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.viewMenu;
             this.MinimumSize = new System.Drawing.Size(640, 480);
-            this.Name = "Browse";
+            this.Name = "BrowseView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Redundant";
             this.Load += new System.EventHandler(this.Open);
@@ -424,7 +416,6 @@
         private System.Windows.Forms.StatusStrip viewStatus;
         private System.Windows.Forms.ToolStripMenuItem viewFile;
         private System.Windows.Forms.ToolStripMenuItem fileClose;
-        private System.Windows.Forms.ToolStripMenuItem viewEdit;
         private System.Windows.Forms.ToolStripMenuItem viewView;
         private System.Windows.Forms.ToolStripMenuItem viewJobs;
         private System.Windows.Forms.Panel viewPanel;
