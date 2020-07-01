@@ -9,13 +9,18 @@ using Newtonsoft.Json.Linq;
 
 namespace Redundant {
     public static class App {
-        public const string FILE_EXTENSION = ".json";
+        public const string FILE_EXTENSION = @".json";
+        public static string DEFAULT_PATH = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".redundant");
 
         public static SessionModel Local;
 
         [STAThread]
         public static void Main(string[] args) {
             Local = new SessionModel();
+
+            if(!Directory.Exists(DEFAULT_PATH)) {
+                Directory.CreateDirectory(DEFAULT_PATH);
+            }
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

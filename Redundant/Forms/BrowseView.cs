@@ -93,7 +93,7 @@ namespace Redundant.Forms {
 
         public void Serialize(object sender, EventArgs args) {
             saveDialog = new SaveFileDialog();
-            saveDialog.InitialDirectory = @"C:\Users\joshd\Desktop";
+            saveDialog.InitialDirectory = App.DEFAULT_PATH;
             saveDialog.Filter = "json files (*.json)|*.json";
             saveDialog.FilterIndex = 1;
             saveDialog.RestoreDirectory = true;
@@ -105,7 +105,7 @@ namespace Redundant.Forms {
 
         public void Deserialize(object sender, EventArgs args) {
             openDialog = new OpenFileDialog();
-            openDialog.InitialDirectory = @"C:\Users\joshd\Desktop";
+            openDialog.InitialDirectory = App.DEFAULT_PATH;
             openDialog.Filter = "json files (*.json)|*.json";
             openDialog.FilterIndex = 1;
             openDialog.RestoreDirectory = true;
