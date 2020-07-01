@@ -79,9 +79,8 @@ namespace Redundant.Forms {
         }
 
         public void Remove(object sender, EventArgs args) {
-            if(MessageBox.Show("Are you sure you'd like to remove this job?",
-                "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
-                if(this.viewList.SelectedItems.Count > 0) {
+            if(this.viewList.SelectedItems.Count > 0) {
+                if(MessageBox.Show("Are you sure you'd like to remove this job?", "Question", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
                     int currentID = Convert.ToInt32(this.viewList.SelectedItems[0].Tag);
                     for(int index = 0; index < currentJobs.Count; index++) {
                         if(currentJobs[index].ID == currentID) {
