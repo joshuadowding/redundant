@@ -91,6 +91,10 @@ namespace Redundant.Forms {
             }
         }
 
+        public void SerialiseAuto(object sender, EventArgs args) {
+            App.Save(App.DEFAULT_FILE);
+        }
+
         public void Serialize(object sender, EventArgs args) {
             saveDialog = new SaveFileDialog();
             saveDialog.InitialDirectory = App.DEFAULT_PATH;

@@ -10,7 +10,9 @@ using Newtonsoft.Json.Linq;
 namespace Redundant {
     public static class App {
         public const string FILE_EXTENSION = @".json";
+
         public static string DEFAULT_PATH = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), ".redundant");
+        public static string DEFAULT_FILE = Path.Combine(DEFAULT_PATH, "autosave.json");
 
         public static SessionModel Local;
 

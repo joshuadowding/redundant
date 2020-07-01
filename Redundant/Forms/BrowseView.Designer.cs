@@ -29,6 +29,7 @@
             this.viewFile = new System.Windows.Forms.ToolStripMenuItem();
             this.fileLoad = new System.Windows.Forms.ToolStripMenuItem();
             this.fileSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -91,6 +92,7 @@
             this.viewFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileLoad,
             this.fileSave,
+            this.toolStripMenuItem1,
             this.toolStripSeparator1,
             this.aboutToolStripMenuItem,
             this.toolStripSeparator2,
@@ -102,38 +104,48 @@
             // fileLoad
             // 
             this.fileLoad.Name = "fileLoad";
-            this.fileLoad.Size = new System.Drawing.Size(107, 22);
-            this.fileLoad.Text = "Load";
+            this.fileLoad.Size = new System.Drawing.Size(207, 22);
+            this.fileLoad.Text = "Load List";
             this.fileLoad.Click += new System.EventHandler(this.Deserialize);
             // 
             // fileSave
             // 
             this.fileSave.Name = "fileSave";
-            this.fileSave.Size = new System.Drawing.Size(107, 22);
-            this.fileSave.Text = "Save";
-            this.fileSave.Click += new System.EventHandler(this.Serialize);
+            this.fileSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.fileSave.Size = new System.Drawing.Size(207, 22);
+            this.fileSave.Text = "Save List";
+            this.fileSave.Click += new System.EventHandler(this.SerialiseAuto);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(207, 22);
+            this.toolStripMenuItem1.Text = "Save List As";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.Serialize);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(104, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(204, 6);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(207, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.About);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(104, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(204, 6);
             // 
             // fileClose
             // 
             this.fileClose.Name = "fileClose";
-            this.fileClose.Size = new System.Drawing.Size(107, 22);
+            this.fileClose.Size = new System.Drawing.Size(207, 22);
             this.fileClose.Text = "Close";
             this.fileClose.Click += new System.EventHandler(this.Exit);
             // 
@@ -453,6 +465,7 @@
         private System.Windows.Forms.ToolStripMenuItem filterActive;
         private System.Windows.Forms.ToolStripMenuItem filterHold;
         private System.Windows.Forms.ToolStripMenuItem filterRejected;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }
 
