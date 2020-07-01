@@ -254,7 +254,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.23564F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.11782F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.23564F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
             this.tableLayoutPanel3.Controls.Add(this.label17, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.label13, 2, 1);
             this.tableLayoutPanel3.Controls.Add(this.label2, 0, 1);
@@ -287,7 +287,7 @@
             this.label17.Location = new System.Drawing.Point(3, 65);
             this.label17.Margin = new System.Windows.Forms.Padding(3);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(32, 15);
+            this.label17.Size = new System.Drawing.Size(31, 15);
             this.label17.TabIndex = 25;
             this.label17.Text = "Type";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -296,10 +296,10 @@
             // 
             this.label13.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(211, 36);
+            this.label13.Location = new System.Drawing.Point(207, 36);
             this.label13.Margin = new System.Windows.Forms.Padding(3);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(38, 15);
+            this.label13.Size = new System.Drawing.Size(39, 15);
             this.label13.TabIndex = 21;
             this.label13.Text = "Expiry";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -332,10 +332,10 @@
             // 
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(421, 7);
+            this.label11.Location = new System.Drawing.Point(411, 7);
             this.label11.Margin = new System.Windows.Forms.Padding(3);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(33, 15);
+            this.label11.Size = new System.Drawing.Size(32, 15);
             this.label11.TabIndex = 16;
             this.label11.Text = "Tests";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -343,16 +343,16 @@
             // callsInput
             // 
             this.callsInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.callsInput.Location = new System.Drawing.Point(67, 3);
+            this.callsInput.Location = new System.Drawing.Point(66, 3);
             this.callsInput.Name = "callsInput";
-            this.callsInput.Size = new System.Drawing.Size(138, 23);
+            this.callsInput.Size = new System.Drawing.Size(135, 23);
             this.callsInput.TabIndex = 15;
             // 
             // label12
             // 
             this.label12.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(211, 7);
+            this.label12.Location = new System.Drawing.Point(207, 7);
             this.label12.Margin = new System.Windows.Forms.Padding(3);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(56, 15);
@@ -363,43 +363,43 @@
             // meetingsInput
             // 
             this.meetingsInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.meetingsInput.Location = new System.Drawing.Point(281, 3);
+            this.meetingsInput.Location = new System.Drawing.Point(275, 3);
             this.meetingsInput.Name = "meetingsInput";
-            this.meetingsInput.Size = new System.Drawing.Size(134, 23);
+            this.meetingsInput.Size = new System.Drawing.Size(130, 23);
             this.meetingsInput.TabIndex = 4;
             // 
             // testsInput
             // 
             this.testsInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.testsInput.Location = new System.Drawing.Point(491, 3);
+            this.testsInput.Location = new System.Drawing.Point(479, 3);
             this.testsInput.Name = "testsInput";
-            this.testsInput.Size = new System.Drawing.Size(134, 23);
+            this.testsInput.Size = new System.Drawing.Size(130, 23);
             this.testsInput.TabIndex = 18;
             // 
             // statusInput
             // 
             this.statusInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.statusInput.FormattingEnabled = true;
-            this.statusInput.Location = new System.Drawing.Point(67, 32);
+            this.statusInput.Location = new System.Drawing.Point(66, 32);
             this.statusInput.Name = "statusInput";
-            this.statusInput.Size = new System.Drawing.Size(138, 23);
+            this.statusInput.Size = new System.Drawing.Size(135, 23);
             this.statusInput.TabIndex = 20;
             // 
             // expiryInput
             // 
             this.expiryInput.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.expiryInput.Location = new System.Drawing.Point(281, 32);
+            this.expiryInput.Location = new System.Drawing.Point(275, 32);
             this.expiryInput.Name = "expiryInput";
-            this.expiryInput.Size = new System.Drawing.Size(134, 23);
+            this.expiryInput.Size = new System.Drawing.Size(130, 23);
             this.expiryInput.TabIndex = 22;
             // 
             // defaultExpiryInput
             // 
             this.defaultExpiryInput.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.defaultExpiryInput.AutoSize = true;
-            this.defaultExpiryInput.Location = new System.Drawing.Point(491, 34);
+            this.defaultExpiryInput.Location = new System.Drawing.Point(479, 34);
             this.defaultExpiryInput.Name = "defaultExpiryInput";
-            this.defaultExpiryInput.Size = new System.Drawing.Size(98, 19);
+            this.defaultExpiryInput.Size = new System.Drawing.Size(99, 19);
             this.defaultExpiryInput.TabIndex = 23;
             this.defaultExpiryInput.Text = "Default Expiry";
             this.defaultExpiryInput.UseVisualStyleBackColor = true;
@@ -409,7 +409,7 @@
             // 
             this.label15.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(211, 65);
+            this.label15.Location = new System.Drawing.Point(207, 65);
             this.label15.Margin = new System.Windows.Forms.Padding(3);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(44, 15);
@@ -421,18 +421,18 @@
             // 
             this.lengthInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lengthInput.FormattingEnabled = true;
-            this.lengthInput.Location = new System.Drawing.Point(281, 61);
+            this.lengthInput.Location = new System.Drawing.Point(275, 61);
             this.lengthInput.Name = "lengthInput";
-            this.lengthInput.Size = new System.Drawing.Size(134, 23);
+            this.lengthInput.Size = new System.Drawing.Size(130, 23);
             this.lengthInput.TabIndex = 26;
             // 
             // typeInput
             // 
             this.typeInput.Dock = System.Windows.Forms.DockStyle.Fill;
             this.typeInput.FormattingEnabled = true;
-            this.typeInput.Location = new System.Drawing.Point(67, 61);
+            this.typeInput.Location = new System.Drawing.Point(66, 61);
             this.typeInput.Name = "typeInput";
-            this.typeInput.Size = new System.Drawing.Size(138, 23);
+            this.typeInput.Size = new System.Drawing.Size(135, 23);
             this.typeInput.TabIndex = 27;
             // 
             // tableLayoutPanel2
@@ -593,7 +593,7 @@
             this.Controls.Add(this.optionPanel);
             this.Controls.Add(this.viewSeparator);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;

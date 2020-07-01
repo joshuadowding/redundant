@@ -51,13 +51,13 @@
             this.viewStatus = new System.Windows.Forms.StatusStrip();
             this.viewPanel = new System.Windows.Forms.Panel();
             this.viewList = new System.Windows.Forms.ListView();
-            this.listStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listPosition = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listCompany = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listAgency = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listLocation = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listInterviews = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listTests = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.listStatus = new System.Windows.Forms.ColumnHeader();
+            this.listPosition = new System.Windows.Forms.ColumnHeader();
+            this.listCompany = new System.Windows.Forms.ColumnHeader();
+            this.listAgency = new System.Windows.Forms.ColumnHeader();
+            this.listLocation = new System.Windows.Forms.ColumnHeader();
+            this.listInterviews = new System.Windows.Forms.ColumnHeader();
+            this.listTests = new System.Windows.Forms.ColumnHeader();
             this.listMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -150,7 +150,7 @@
             this.viewSort.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sortStatus});
             this.viewSort.Name = "viewSort";
-            this.viewSort.Size = new System.Drawing.Size(180, 22);
+            this.viewSort.Size = new System.Drawing.Size(95, 22);
             this.viewSort.Text = "Sort";
             // 
             // sortStatus
@@ -289,6 +289,7 @@
             this.viewList.Dock = System.Windows.Forms.DockStyle.Fill;
             this.viewList.FullRowSelect = true;
             this.viewList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.viewList.HideSelection = false;
             this.viewList.LabelWrap = false;
             this.viewList.Location = new System.Drawing.Point(6, 6);
             this.viewList.MultiSelect = false;
@@ -392,7 +393,7 @@
             this.Controls.Add(this.viewPanel);
             this.Controls.Add(this.viewStatus);
             this.Controls.Add(this.viewMenu);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.viewMenu;
             this.MinimumSize = new System.Drawing.Size(640, 480);
